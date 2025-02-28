@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+
+</head>
+
+<body>
+    <h2>Student Registration Form</h2>
+    <div class="container">
+
+        <form>
+            <div class="group">
+                <label for="fname" class="lables">First Name:</label>
+                <input type="text" id="fname" placeholder="Enter your first name" pattern="[A-Za-z]{3,6}" minlength="3"
+                    maxlength="6" required>
+            </div>
+            <div class="group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" placeholder="Enter your last name" pattern="[A-Za-z]{3,6}" minlength="3"
+                    maxlength="6" required>
+            </div>
+            <div class="group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="It should contain @..." required>
+            </div>
+            <div class="group">
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" placeholder="Only 10 digits are allowed" maxlength="10"
+                    pattern="[0-9]{10}" required>
+            </div>
+            <div class="group">
+                <label for="gender">Gender:</label>
+
+                <input type="radio" id="male" name="gender" value="Male" style="width: auto;">
+                Male
+                <input type="radio" id="female" name="gender" value="Female" style="width: auto;">
+                Female
+
+
+            </div>
+            <div class="group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div class="group">
+                <label for="address">Address:</label>
+                <textarea id="address" rows="4" cols="70" placeholder="House-No , street ,area , city."
+                    style="padding-left: 3px;"></textarea>
+            </div>
+            <div class="group">
+                <label for="city">City:</label>
+                <input type="text" id="city" placeholder="City" required>
+            </div>
+            <div class="group">
+                <label for="pin">Area PIN:</label>
+                <input type="text" id="pin" pattern="[0-9]{6}" minlength="6" maxlength="6" required>
+            </div>
+            <div class="group">
+                <label for="state">State:</label>
+                <input type="text" id="state" required>
+            </div>
+            <div class="group">
+                <label for="qualification">Qualification:</label>
+                <select id="qualification">
+                    <option value="">Select Qualification</option>
+                    <option value="BSc">BSc</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="MSc">MSc</option>
+                    <option value="M.Tech">M.Tech</option>
+                </select>
+
+            </div>
+            <div class="group">
+                <label>Specialization:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="cs" name="specialization" value="Computer Science" style="width: auto;">
+                    Computer Science
+                    <br>
+
+                    <input type="checkbox" id="it" name="specialization" value="Information Technology"
+                        style="width: auto;">
+                    Information Technology
+                    <br>
+                    <input type="checkbox" id="arch" name="specialization" value="Computer Architecture"
+                        style="width: auto;">
+                    Computer Architecture
+                    <br>
+                    <input type="checkbox" id="telecom" name="specialization" value="Tele Communication"
+                        style="width: auto;">
+                    Tele Communication
+                    <br>
+                </div>
+            </div>
+            <div class="group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" minlength="8" required>
+
+            </div>
+            <div class="group">
+                <button type="submit" class="btn">Registered</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
